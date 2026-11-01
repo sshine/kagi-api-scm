@@ -1,0 +1,16 @@
+# Guile
+*.go
+/build/
+
+# Nix
+/.direnv/
+/result
+/hk.pkl
+
+# Editor
+*~
+.*.swp
+\#*\#
+
+# OS
+.DS_Store

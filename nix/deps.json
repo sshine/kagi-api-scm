@@ -1,0 +1,6 @@
+{
+  "kagi api": { "file": "src/kagi/api.scm", "deps": ["kagi error", "kagi search"], "external": [] },
+  "kagi error": { "file": "src/kagi/error.scm", "deps": [], "external": ["ice-9 match", "json", "srfi srfi-1", "srfi srfi-13", "srfi srfi-9"] },
+  "kagi http": { "file": "src/kagi/http.scm", "deps": ["kagi error"], "external": ["json", "rnrs bytevectors", "web client", "web http", "web response"] },
+  "kagi search": { "file": "src/kagi/search.scm", "deps": ["kagi error", "kagi http"], "external": ["ice-9 match", "ice-9 threads", "json", "srfi srfi-1", "srfi srfi-13", "srfi srfi-9"] }
+}
